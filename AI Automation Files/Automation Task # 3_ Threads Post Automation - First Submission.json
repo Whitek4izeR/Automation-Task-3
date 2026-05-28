@@ -1,0 +1,717 @@
+{
+  "name": "Automation Task # 3: Threads Post Automation - First Submission",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc",
+          "mode": "list",
+          "cachedResultName": "SpreadSheet # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 72892593,
+          "mode": "list",
+          "cachedResultName": "Delivery Logs",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit#gid=72892593"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Timestamp": "={{ $now.toFormat('yyyy-MM-dd HH:mm:ss') }}",
+            "Notes": "New Post Successfull",
+            "Status": "={{ 'Sent' }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Notes",
+              "displayName": "Notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        704,
+        64
+      ],
+      "id": "45c9415b-bb1e-4a91-88e6-787d0e72d904",
+      "name": "Successful",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yjBV3QW7cCEwpesM",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc",
+          "mode": "list",
+          "cachedResultName": "SpreadSheet # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1581051104,
+          "mode": "list",
+          "cachedResultName": "Error Handling",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit#gid=1581051104"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 0
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Error",
+              "displayName": "Error",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Notes",
+              "displayName": "Notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        704,
+        256
+      ],
+      "id": "e89013d3-a6f1-4cca-80a1-088a04f8edbd",
+      "name": "Failed",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yjBV3QW7cCEwpesM",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc",
+          "mode": "list",
+          "cachedResultName": "SpreadSheet # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1411741482,
+          "mode": "list",
+          "cachedResultName": "Credentials",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit#gid=1411741482"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -48,
+        160
+      ],
+      "id": "f4434a70-29fa-424c-ac9d-82ec20b4f3e6",
+      "name": "Get Credentials",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yjBV3QW7cCEwpesM",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc",
+          "mode": "list",
+          "cachedResultName": "SpreadSheet # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1647452545,
+          "mode": "list",
+          "cachedResultName": "Threads Post for the Day",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit#gid=1647452545"
+        },
+        "event": "rowAdded",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        -256,
+        160
+      ],
+      "id": "70d5b009-1ea2-4bdc-b3c8-456fa7e3d906",
+      "name": "Check Latest Post Upload",
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "1WBZ8LzPzn37RsZJ",
+          "name": "Google Sheets Trigger OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "elizarva20@gmail.com",
+        "subject": "Urgent: Failed Threads Posting ",
+        "message": "Hi Team, \n\nThreads Posting failed. Please check the workflow.\n\n\nRegards,\nElizar(Thedu)",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        896,
+        256
+      ],
+      "id": "a0c10443-5fbb-4e41-a89d-dd1b29de8fd0",
+      "name": "Send a message",
+      "webhookId": "140c86e5-58a2-452b-a1dd-69b3f1290c06",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "0dxuFNSpfKHwtp3n",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## How to get your Threads Credentials\n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)\n\n\n#### Facebook Business page:\n1. Go to your Facebook Business Page\n2. On the left select Meta Business Suite\n3. On the left > under Accounts, select Apps\n4. Click Add on top > Create a new app ID\n5. Input App name, click Next\n6. Add use cases > select, Featured, on right select Access the Threads API\n7. Select your business portfolio, click Next, click Next again.\n8. Lastly Click Go to your Dashboard/Create App\n\n\n#### Dashboard\n1. On your Dashboard, select Customize te Access the Threads API use case.\n2. On the left click Settings\n\nThreads app ID: \nThreads app secret: \n\nOn the lower left clicl App roles > select Roles\nClick Add People > select Threads Tester \nAt the bottom type your account id > click Add \n\n\n#### On Threads Mobile/PC:\n1. At the bottom click the burger Menu, click Settings > select Account > select Website permissions\n2. On top select Invites, click Accept\n\n\n#### Back on Meta:\n1. On top select Tools > Graph API Explorer\n2. On left click the drop down, select threads.net\n3. On right Meta App click the drop down, and select the created API/App\n4. Click Generate Threads Access Token\n\n\nNote: If you receive login unavailable, you just need to wait until it gives you the right screen.\n\n\n5. Click Continue > then copy the Access Token\n6. For Threads ID, on top click Submit\n\nNote: This gives you the Threads ID\n{\n  \"id\": \"26381047761570663\",\n  \"name\": \"Jay-R\"\n}\n\n\n\n### Note:\nShort live tokens = last for 1 Hour to a few hours\nLong live tokens = last for 60 Days\n\n\n",
+        "height": 1296,
+        "width": 672,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -1040,
+        -32
+      ],
+      "typeVersion": 1,
+      "id": "96f13824-29e7-4a67-bffb-3d6fe24fd84f",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.threads.net/v1.0/{{ $vars.Threads_ID }}/threads_publish",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $vars.Threads_Access_Token }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"creation_id\": \"{{ $json.id }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        416,
+        160
+      ],
+      "id": "7cfa1e4e-dff4-4d0f-b194-d0792ebae53b",
+      "name": "Post Thread",
+      "retryOnFail": true,
+      "notesInFlow": false,
+      "onError": "continueErrorOutput",
+      "notes": "Error"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "=my_test_session"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        112,
+        896
+      ],
+      "id": "87d29ceb-dc53-4f71-9e62-2a0e19a1c7b7",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        -16,
+        896
+      ],
+      "id": "b7e85ee2-4467-465f-97a8-802cede16d1f",
+      "name": "Gemini: Verify and Confirm Credentials",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "EMszNcf2wxGcTUVW",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc",
+          "mode": "list",
+          "cachedResultName": "SpreadSheet # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1655173545,
+          "mode": "list",
+          "cachedResultName": "Provided Setup Information",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit#gid=1655173545"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        240,
+        896
+      ],
+      "id": "1652ba8f-66f2-4e2a-840f-109f087f939b",
+      "name": "Provided Credentials",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yjBV3QW7cCEwpesM",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc",
+          "mode": "list",
+          "cachedResultName": "SpreadSheet # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1508124536,
+          "mode": "list",
+          "cachedResultName": "Confirmation Step # 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_OWWknWxNZTqLxYQVGoeAh6MULW2Vh8a2ovk4mqQGhc/edit#gid=1508124536"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Result": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Result', ``, 'string') }}",
+            "Notes": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Notes', ``, 'string') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Result",
+              "displayName": "Result",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Notes",
+              "displayName": "Notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        368,
+        896
+      ],
+      "id": "61935819-2505-48ae-9503-ed001dca2f7d",
+      "name": "Result",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yjBV3QW7cCEwpesM",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        672
+      ],
+      "id": "3b382c8f-c797-4a17-9e92-ad020f0bdab9",
+      "name": "Manual Trigger"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Role: You are a credential verifier \nTask:\n- Compare the data provided and the data on the spreadsheet\n\n* Provided data\n\nItems\n\t            \n1. Account ID\t= todayis_hello\n2. Password\t= ohhello!@\n3. Use Case\t= Threads API Access\n4. Threads App ID\t= 2121913044096712\n5. Display Name\t= Threads automatic upload\n\n\n- \n\nFormat:\n- based on confirmation and verification answer the below\n- Use JSON format \n\n1. Correct Details / Incorrect Details\n\n2. Info: \na. If correct details = Confirmed\nb. Incorrect Details = Incorrect, [inform the missing required information or inform the the provided credentials are incorrect.]\n\n- On the Google Spreadsheet connected named  \"Confirmation Step # 1\". Provide the below\na. Result = Correct Details / Incorrect Details\nb. Info: [provide the result on top (b.)]\n",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        112,
+        672
+      ],
+      "id": "48721820-ac28-4cfe-8435-3b1aed00c904",
+      "name": "Agent: Credentials Verifier"
+    },
+    {
+      "parameters": {
+        "content": "## Check Latest Upload\n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 464,
+        "width": 480,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -352,
+        -16
+      ],
+      "typeVersion": 1,
+      "id": "d57019ba-22b5-4c2d-8eb7-b2cbfbd17ad8",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Post on Threads \n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 464,
+        "width": 448,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        144,
+        -16
+      ],
+      "typeVersion": 1,
+      "id": "64c1e8bc-ca24-473e-ba08-8cb281773ce0",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Error Handling\n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 464,
+        "width": 528,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        608,
+        -16
+      ],
+      "typeVersion": 1,
+      "id": "ecc85d4a-4a0a-43b1-afec-0d81f2b841a0",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## Check Credentials\n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 560,
+        "width": 912,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -352,
+        480
+      ],
+      "typeVersion": 1,
+      "id": "0030a4b3-afbf-4e41-9932-1a04c4896c73",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "### Add-Ons\n1. Retries - on \"Post on Threads\"",
+        "height": 112,
+        "width": 256,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        144,
+        -144
+      ],
+      "typeVersion": 1,
+      "id": "3db06430-d54f-4734-a3e0-fce8110bd3d3",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "method": "=POST",
+        "url": "=https://graph.threads.net/v1.0/{{ $vars.Threads_ID }}/threads",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $vars.Threads_Access_Token }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": \"{{ $('Check Latest Post Upload').item.json.Post }}\",\n  \"media_type\": \"TEXT\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        224,
+        160
+      ],
+      "id": "462a5070-5587-4573-b763-3ed0c06d9b4d",
+      "name": "Create Threads",
+      "retryOnFail": true
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Failed": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Credentials": {
+      "main": [
+        [
+          {
+            "node": "Create Threads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Latest Post Upload": {
+      "main": [
+        [
+          {
+            "node": "Get Credentials",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post Thread": {
+      "main": [
+        [
+          {
+            "node": "Successful",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Agent: Credentials Verifier",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini: Verify and Confirm Credentials": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Agent: Credentials Verifier",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Provided Credentials": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent: Credentials Verifier",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Result": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent: Credentials Verifier",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Agent: Credentials Verifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Threads": {
+      "main": [
+        [
+          {
+            "node": "Post Thread",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "e775c57b-2e22-45b4-aea9-e7c965df330f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "700c8041527086f476af44cbd29322ea1ebe8361edfbecc8bd0610b361a66c24"
+  },
+  "id": "C6HjEK8z4ny6DLcb",
+  "tags": []
+}
