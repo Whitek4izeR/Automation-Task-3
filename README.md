@@ -244,5 +244,5 @@ Workflow implemented, tested, documented, and prepared for migration.
 
 ## Author
 
-Elizar Dela Isla
+Elizar 
 
